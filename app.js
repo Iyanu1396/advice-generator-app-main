@@ -7,9 +7,9 @@ const renderAdvice = function (data) {
   wrapper.innerHTML = "";
   html = `
     <small id="advice-id">Advice #${data.id}</small>
-    <p class="quotes">
+    <h1 class="quotes">
       ${data.advice}
-    </p>
+    </h1>
     `;
   wrapper.insertAdjacentHTML("afterbegin", html);
 };
@@ -17,9 +17,9 @@ const renderAdvice = function (data) {
 const renderError = function (errorMsg) {
   wrapper.innerHTML = "";
   html = `
-    <p class="quotes">
+    <h1 class="quotes">
       ${errorMsg}
-    </p>
+    </h1>
     `;
   wrapper.insertAdjacentHTML("afterbegin", html);
 };
